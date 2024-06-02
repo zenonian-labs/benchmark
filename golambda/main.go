@@ -8,9 +8,6 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 )
 
-func init() {
-}
-
 func LambdaHandler(
 	_ context.Context,
 	e events.APIGatewayV2HTTPRequest,

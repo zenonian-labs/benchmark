@@ -5,7 +5,7 @@ import { API } from './stacks/api';
 export default {
 	config() {
 		return {
-			name: 'zenonian-benchmark',
+			name: 'benchmark',
 			region: 'ap-south-1',
 		};
 	},

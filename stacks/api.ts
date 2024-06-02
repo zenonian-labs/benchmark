@@ -2,7 +2,7 @@ import type { StackContext } from 'sst/constructs';
 import { Api, Function } from 'sst/constructs';
 
 export function API({ stack }: StackContext) {
-	const defaultAPI = new Function(stack, 'default', {
+	const golambda = new Function(stack, 'golambda', {
 		handler: 'golambda',
 		runtime: 'go',
 		architecture: 'arm_64',
@@ -16,9 +16,8 @@ export function API({ stack }: StackContext) {
 			allowMethods: ['GET', 'POST'],
 		},
 		routes: {
-			'GET /': {
-				function: defaultAPI,
-			},
+			'GET /golambda': { function: golambda },
+			'POST /golambda': { function: golambda },
 		},
 		customDomain: {
 			hostedZone: 'zenonian.com',
