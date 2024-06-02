@@ -62,7 +62,7 @@ Time per request: 395.819 [ms] (mean)
 Time per request: 395.819 [ms] (mean, across all concurrent requests)
 Transfer rate: 0.43 [Kbytes/sec] received
 
-#### -> response time decreases if using a small of no concurrent requests
+#### -> response time decreases if using a small n.o concurrent requests
 
 - AWS API gateways throttle?
 - AWS Lambda concurrent runtime throttle?
