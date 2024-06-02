@@ -1,0 +1,1 @@
+ab -c 1000 -n 1000 https://benchmark.zenonian.com/golambda
